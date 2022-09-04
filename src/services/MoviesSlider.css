@@ -1,0 +1,18 @@
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiper-slide p {
+  margin: 10px 0 0 0;
+  color: rgba(255, 255, 255, 0.797);
+  font-weight: bold;
+}
+
+.swiper-slide img {
+  cursor: pointer;
+
+  border-radius: 10px;
+}

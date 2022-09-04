@@ -1,0 +1,18 @@
+.movies-container-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.movies-container-grid div {
+  margin: 20px;
+}
+.movies-container-grid div img {
+  cursor: pointer;
+  transition: transform 0.3s;
+  border-radius: 10px;
+}
+
+.movies-container-grid div img:hover {
+  transform: scale(1.02);
+}

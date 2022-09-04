@@ -1,0 +1,126 @@
+.genre-container {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.genre-container-text-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+.genre-container-title {
+  width: 100%;
+}
+.line {
+  border-radius: 50px;
+  margin-right: 25px;
+  width: 30px;
+  background-color: #3c91cc;
+}
+.genre-container h2 {
+  margin: 0 0 25px 0;
+  font-size: 3em;
+  color: rgba(255, 255, 255, 0.797);
+}
+
+.genre-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.genre-buttons button {
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.797);
+  color: rgba(255, 255, 255, 0.797);
+  padding: 15px 30px;
+  background-size: 200% 200%;
+  background-image: linear-gradient(to top, #d8315a 50%, transparent 50%);
+  -webkit-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -moz-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -ms-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -o-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+
+  margin: 25px 15px 25px 0;
+}
+
+.genre-buttons button:hover {
+  color: white;
+  border-color: #d8315a;
+  background-image: linear-gradient(to top, #d8315a 51%, transparent 50%);
+  background-position: 0 100%;
+  -webkit-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -moz-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -ms-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -o-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+}
+
+.genre-buttons div p {
+  font-weight: bold;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.797);
+  text-decoration: none;
+  transition: all 100ms linear;
+  -webkit-transition: all 100ms linear;
+  -moz-transition: all 100ms linear;
+  -ms-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
+}
+
+.genre-buttons div p:hover {
+  color: white;
+  transition: all 100ms linear;
+  -webkit-transition: all 100ms linear;
+  -moz-transition: all 100ms linear;
+  -ms-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
+}
+
+.genre-buttons div p:active {
+  color: white;
+}
+
+.activo {
+  background-color: #d8315a !important;
+  border: 1px solid #d8315a !important;
+}
+
+@media (max-width: 600px) {
+  .genre-container-text-line {
+    margin: 0 10px;
+    margin-bottom: 50px;
+  }
+  .genre-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-right: 10px;
+  }
+  .genre-container h2 {
+    font-size: 2.5em;
+  }
+  .genre-buttons button {
+    margin: 0;
+    padding: 10px 20px;
+  }
+  .line {
+    margin: 0;
+    width: 20px;
+  }
+}

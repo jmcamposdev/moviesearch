@@ -1,0 +1,159 @@
+.movies-container {
+  display: flex;
+}
+.movies-container-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.movies-container-title h2 {
+  margin: 100px 0 0 0;
+  color: rgba(255, 255, 255, 0.674);
+  font-size: 10em;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-orientation: sideways;
+  text-align: right;
+  text-orientation: sideways;
+}
+
+.movies-container-lines {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.blue {
+  border-radius: 50px;
+  width: 45%;
+  height: 20px;
+  background-color: #3d92cc;
+}
+
+.red {
+  border-radius: 50px;
+  width: 45%;
+  height: 20px;
+  background-color: #d8315b;
+}
+.movies-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movies-button-left {
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.797);
+  color: rgba(255, 255, 255, 0.797);
+  padding: 15px 30px;
+  background-size: 200% 200%;
+  background-image: linear-gradient(to left, #d8315a 50%, transparent 50%);
+  -webkit-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -moz-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -ms-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -o-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+
+  margin: 25px 15px 25px 0;
+}
+.movies-button-left:hover {
+  color: white;
+  border-color: #d8315a;
+  background-image: linear-gradient(to left, #d8315a 51%, transparent 50%);
+  background-position: 100% 0;
+  -webkit-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -moz-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -ms-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -o-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+}
+
+.movies-button-right {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.797);
+  color: rgba(255, 255, 255, 0.797);
+  padding: 15px 30px;
+  background-size: 200% 200%;
+  background-image: linear-gradient(to left, #d8315a 50%, transparent 50%);
+  -webkit-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -moz-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -ms-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -o-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+
+  margin: 25px 15px 25px 0;
+}
+.movies-button-right:hover {
+  color: white;
+  border-color: #d8315a;
+  background-image: linear-gradient(to left, #d8315a 51%, transparent 50%);
+  background-position: -100% 0;
+  -webkit-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -moz-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -ms-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  -o-transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+  transition: background-position 300ms, color 300ms ease,
+    border-color 300ms ease;
+}
+
+@media (max-width: 600px) {
+  .movies-container {
+    flex-direction: column;
+  }
+  .movies-container-title {
+    align-items: initial;
+    margin: 0 10px;
+  }
+  .movies-container-lines {
+    justify-content: end;
+  }
+  .blue,
+  .red {
+    width: 20%;
+  }
+  .blue {
+    margin-right: 20px;
+  }
+  .movies-container-title h2 {
+    writing-mode: horizontal-tb;
+    transform: initial;
+    font-size: 2.5em;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .movies-buttons-container {
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+  .movies-buttons-container button {
+    margin: 0;
+  }
+}
