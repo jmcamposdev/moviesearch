@@ -9,7 +9,7 @@ Es necesario para el correacto funcionamiento añador la siguiente lineas:
 
 ### `REACT_APP_API_KEY="your api"`
 
-##Obtener API
+## Obtener API
 
 Para obtener la clave API registrate en https://www.themoviedb.org/
 
