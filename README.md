@@ -1,6 +1,9 @@
 # Como Instalarlo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ante todo colonamos el repositorion con:
+### `git clone`
+
+## Creamos en la raiz el fichero .env
 
 ## Available Scripts
 
