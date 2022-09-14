@@ -5,6 +5,7 @@ import { Route, Switch } from "wouter";
 import Home from "./pages/Home.jsx";
 import Movie from "./pages/Movie.jsx";
 import Companie from "./pages/Companie.jsx";
+console.log(process.env.REACT_APP_API_KEY);
 
 function App() {
   return (

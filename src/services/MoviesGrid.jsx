@@ -10,18 +10,18 @@ export default function MoviesGrid({ patch }) {
   const [movies, setMovies] = useState({ loading: true, data: null });
   const Patch = patch;
   const [url, seturl] = useState(
-    `https://api.themoviedb.org/3/${Patch}&api_key=3966c5132f1ab5d93f46bc5453fc4456`
+    `https://api.themoviedb.org/3/${Patch}&api_key=${process.env.REACT_APP_API_KEY}`
   );
   const [config, setConfig] = useState({ loading: true, data: null });
   useEffect(() => {
     seturl(
-      `https://api.themoviedb.org/3/${Patch}&api_key=3966c5132f1ab5d93f46bc5453fc4456`
+      `https://api.themoviedb.org/3/${Patch}&api_key=${process.env.REACT_APP_API_KEY}`
     );
   }, [Patch]);
   useEffect(() => {
     getMovies(url).then((movie) => setMovies({ loading: false, data: movie }));
     getMovies(
-      "https://api.themoviedb.org/3/configuration?api_key=3966c5132f1ab5d93f46bc5453fc4456"
+      `https://api.themoviedb.org/3/configuration?api_key=${process.env.REACT_APP_API_KEY}`
     ).then((configuration) =>
       setConfig({ loading: false, data: configuration.images })
     );

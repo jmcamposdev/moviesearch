@@ -47,19 +47,19 @@ export default function Movie({ params }) {
 
   useEffect(() => {
     getMovies(
-      `https://api.themoviedb.org/3/movie/${id}?api_key=3966c5132f1ab5d93f46bc5453fc4456&language=es-ES`
+      `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=es-ES`
     ).then((movie) => setMovie({ loading: false, data: movie }));
     getMovies(
-      `https://api.themoviedb.org/3/movie/${id}/release_dates?api_key=3966c5132f1ab5d93f46bc5453fc4456&language=es-ES`
+      `https://api.themoviedb.org/3/movie/${id}/release_dates?api_key=${process.env.REACT_APP_API_KEY}&language=es-ES`
     ).then((movie) => setMovieRelease({ loading: false, data: movie }));
     getMovies(
-      `https://api.themoviedb.org/3/movie/${id}/credits?api_key=3966c5132f1ab5d93f46bc5453fc4456&language=es-ES`
+      `https://api.themoviedb.org/3/movie/${id}/credits?api_key=${process.env.REACT_APP_API_KEY}&language=es-ES`
     ).then((movie) => setCredits({ loading: false, data: movie }));
     getMovies(
-      `https://api.themoviedb.org/3/movie/${id}/videos?api_key=3966c5132f1ab5d93f46bc5453fc4456&language=es-ES`
+      `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${process.env.REACT_APP_API_KEY}&language=es-ES`
     ).then((movie) => setVideo({ loading: false, data: movie }));
     getMovies(
-      "https://api.themoviedb.org/3/configuration?api_key=3966c5132f1ab5d93f46bc5453fc4456"
+      `https://api.themoviedb.org/3/configuration?api_key=${process.env.REACT_APP_API_KEY}`
     ).then((configuration) =>
       setConfig({ loading: false, data: configuration.images })
     );

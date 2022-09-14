@@ -19,30 +19,29 @@ export default function MoviesSlider({ patch }) {
   const Patch = patch;
   const [movies, setMovies] = useState({ loading: true, data: null });
   const [url, seturl] = useState(
-    `https://api.themoviedb.org/3/${Patch}&api_key=3966c5132f1ab5d93f46bc5453fc4456`
+    `https://api.themoviedb.org/3/${Patch}&api_key=${process.env.REACT_APP_API_KEY}`
   );
   const [config, setConfig] = useState({ loading: true, data: null });
   const [companie, setCompanie] = useState({ loading: true, data: null });
   useEffect(() => {
     seturl(
-      `https://api.themoviedb.org/3/${Patch}&api_key=3966c5132f1ab5d93f46bc5453fc4456`
+      `https://api.themoviedb.org/3/${Patch}&api_key=${process.env.REACT_APP_API_KEY}`
     );
   }, [Patch]);
   useEffect(() => {
     setMovies({ loading: true, data: null });
     getMovies(url).then((movie) => setMovies({ loading: false, data: movie }));
     getMovies(
-      "https://api.themoviedb.org/3/configuration?api_key=3966c5132f1ab5d93f46bc5453fc4456"
+      `https://api.themoviedb.org/3/configuration?api_key=${process.env.REACT_APP_API_KEY}`
     ).then((configuration) =>
       setConfig({ loading: false, data: configuration.images })
     );
 
     getMovies(
-      "https://api.themoviedb.org/3/search/company?api_key=3966c5132f1ab5d93f46bc5453fc4456&query=Disney&page=1"
+      `https://api.themoviedb.org/3/search/company?api_key=${process.env.REACT_APP_API_KEY}&query=Disney&page=1`
     ).then((companie) => setCompanie({ loading: false, data: companie }));
   }, [url]);
 
-  console.log(companie);
   return (
     <div className="movies-container-slider">
       <Swiper
