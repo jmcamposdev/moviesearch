@@ -5,6 +5,11 @@ Ante todo colonamos el repositorion con:
 
 ## Creamos en la raiz el fichero .env
 
+Es necesario para el correacto funcionamiento añador la siguiente lineas:
+
+### `// .env
+REACT_APP_API_KEY="3966c5132f1ab5d93f46bc5453fc4456"`
+
 ## Available Scripts
 
 In the project directory, you can run:
