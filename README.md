@@ -7,7 +7,8 @@ Ante todo colonamos el repositorion con:
 
 Es necesario para el correacto funcionamiento añador la siguiente lineas:
 
-### `// .env REACT_APP_API_KEY="3966c5132f1ab5d93f46bc5453fc4456"`
+### `// .env `∫
+### `REACT_APP_API_KEY="3966c5132f1ab5d93f46bc5453fc4456"`
 
 ## Available Scripts
 
