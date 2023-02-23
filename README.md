@@ -1,6 +1,6 @@
 # Como Instalarlo
 
-Ante todo colonamos el repositorion con:
+Ante todo clonamos el repositorion con:
 ### `git clone`
 
 ## Creamos en la raiz el fichero .env
