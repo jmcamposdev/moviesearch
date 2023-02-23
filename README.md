@@ -5,7 +5,7 @@ Ante todo clonamos el repositorion con:
 
 ## Creamos en la raiz el fichero .env
 
-Es necesario para el correacto funcionamiento añador la siguiente lineas:
+Es necesario para el correcto funcionamiento añadir la siguiente linea:
 
 ### `REACT_APP_API_KEY="your api"`
 
@@ -21,7 +21,7 @@ En el directorio del projecto, puedes ejecutar:
 
 Abre [http://localhost:3000](http://localhost:3000) para verlo en el navegador.
 
-La página se reargara al hacer cambios.\
+La página se recargara al hacer cambios.\
 
 ### `npm run build`
 
