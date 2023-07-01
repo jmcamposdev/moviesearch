@@ -1,5 +1,6 @@
 {
-  "name": "moviesapi",
+  "name": "moviesearch",
+  "homepage": "https://jmcampos.dev/moviesearch",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
