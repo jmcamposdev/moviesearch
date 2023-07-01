@@ -10,10 +10,10 @@ function App() {
   return (
     <Router base="/moviesearch">
       <Switch>
-        <Route path="/" component={Home} /> // Home path
-        <Route path="/movie/:id" component={Movie} /> // Movie path
-        <Route path="/companie/:id" component={Companie} /> // Companies path
-        <Route>404</Route> // Error path
+        <Route path="/" component={Home} /> {/* HomePage */}
+        <Route path="/movie/:id" component={Movie} />  {/* MoviePage */}
+        <Route path="/companie/:id" component={Companie} />  {/* CompanyPage */}
+        <Route>404</Route>  {/* ErrorPage */}
       </Switch>
     </Router>
   );

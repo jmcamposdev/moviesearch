@@ -15,14 +15,18 @@ import "./MoviesGrid.css";
 import getMovies from "./fecth.jsx";
 
 export default function MoviesSlider({ patch }) {
+  /* eslint-disable */
   const [location, setLocation] = useLocation();
+  /* eslint-enable */
   const Patch = patch;
   const [movies, setMovies] = useState({ loading: true, data: null });
   const [url, seturl] = useState(
     `https://api.themoviedb.org/3/${Patch}&api_key=${process.env.REACT_APP_API_KEY}`
   );
   const [config, setConfig] = useState({ loading: true, data: null });
+    /* eslint-disable */
   const [companie, setCompanie] = useState({ loading: true, data: null });
+    /* eslint-enable */
   useEffect(() => {
     seturl(
       `https://api.themoviedb.org/3/${Patch}&api_key=${process.env.REACT_APP_API_KEY}`

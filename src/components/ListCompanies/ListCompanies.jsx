@@ -9,7 +9,9 @@ import National from "../../img/national.svg";
 import StarWar from "../../img/starwars.svg";
 
 export default function ListCompanies() {
+  /* eslint-disable */
   const [location, setLocation] = useLocation();
+  /* eslint-enable */
 
   return (
     <div className="companies-grid">
