@@ -1,21 +1,22 @@
 import "./css/App.css";
 import "./css/normalize.css";
-import { Route, Router, Switch } from "wouter";
+import { Route, Switch } from "wouter";
 
 import Home from "./pages/Home.jsx";
 import Movie from "./pages/Movie.jsx";
 import Companie from "./pages/Companie.jsx";
+console.log(process.env.REACT_APP_API_KEY);
 
 function App() {
   return (
-    <Router base="/moviesearch">
-      <Switch>
-        <Route path="/" component={Home} /> // Home path
-        <Route path="/movie/:id" component={Movie} /> // Movie path
-        <Route path="/companie/:id" component={Companie} /> // Companies path
-        <Route>404</Route> // Error path
-      </Switch>
-    </Router>
+    <Switch>
+      <Route path="/" component={Home} />
+      <Route path="/movie/:id" component={Movie} />
+      <Route path="/companie/:id" component={Companie} />
+      <Route path="/:rest*">
+        {(params) => `404, Sorry the page ${params.rest} does not exist!`}
+      </Route>
+    </Switch>
   );
 }
 
